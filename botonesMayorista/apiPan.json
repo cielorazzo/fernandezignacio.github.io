@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 590,
+      "id": 7,
+      "title": "Artesano Pan",
+      "thumbnailUrl": "https://picsum.photos/id/0/600"
+    },
+    {
+      "precio": 330,
+      "id": 8,
+      "title": "Liviano 400gr",
+      "thumbnailUrl": "https://picsum.photos/id/10/600"
+    },
+    {
+      "precio": 350,
+      "id": 9,
+      "title": "Integral",
+      "thumbnailUrl": "https://picsum.photos/id/20/600"
+    },
+    {
+      "precio": 355,
+      "id": 10,
+      "title": "Lino Pan",
+      "thumbnailUrl": "https://picsum.photos/id/30/600"
+    },
+    {
+      "precio": 180,
+      "id": 11,
+      "title": "Panchos",
+      "thumbnailUrl": "https://picsum.photos/id/40/600"
+    },
+    {
+      "precio": 180,
+      "id": 12,
+      "title": "Hamburguesas c/Sésamo",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    }
+  ]

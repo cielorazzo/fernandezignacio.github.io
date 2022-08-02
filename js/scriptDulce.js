@@ -9,14 +9,23 @@ let carrito = {};
 
 document.addEventListener(`DOMContentLoaded`, () => {
     fetchData();
+    //para almacenar en la variable carrito, si es que hay algo
+    if (localStorage.getItem (`carrito`)) {
+        carrito = JSON.parse(localStorage.getItem (`carrito`))
+        pintarCarrito()
+    }
 })
 cards.addEventListener(`click`, (e) => {
     addCarrito(e);
 })
 
+items.addEventListener(`click`, e => {
+    btnAccion(e)
+})
+
 const fetchData = async () => {
     try {
-        const res = await fetch(`api.json`);
+        const res = await fetch(`apiDulce.json`);
         const data = await res.json();
         pintarCards(data);
     } catch (error) {
@@ -63,7 +72,6 @@ const setCarrito = objeto => {
 }
 
 const pintarCarrito = () => {
-    console.log(carrito)
     items.innerHTML = "";
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelector(`th`).textContent = producto.id
@@ -79,13 +87,55 @@ const pintarCarrito = () => {
     items.appendChild(fragment)
 
     pintarFooter()
+
+    //para guardar la info,, strigify es para que vuelva como una coleccion de obejeto, antes haberlo hecho con parse.
+    localStorage.setItem(`carrito`, JSON.stringify(carrito))
+
 }
 
 const pintarFooter = () => {
     footer.innerHTML = "";
-    if(Object.keys(Ejcarrito).length === 0) {
+    if(Object.keys(carrito).length === 0) {
         footer.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
         `
+        return
     }
+//creo const para ir sumando la cantidad de cada producto y lo vaya acumulando= acc
+    const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad,0)
+    const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio,0)//paso el 0 para devolverlo como un nro
+    
+    templateFooter.querySelectorAll(`td`)[0].textContent = nCantidad
+    templateFooter.querySelector(`span`).textContent = nPrecio
+
+    const clone = templateFooter.cloneNode(true)
+    fragment.appendChild(clone)
+    footer.appendChild(fragment)
+
+    const btnVaciar = document.getElementById(`vaciar-carrito`)
+    btnVaciar.addEventListener(`click`, () => {
+        carrito = {} //Lo utilizo para volver a vaciar el carrito
+        pintarCarrito() //Para volver a 
+    })
+}
+ 
+//Ya sea para aumentar de cantidad el prod y luego para disminuir
+const btnAccion = e  => {
+    if(e.target.classList.contains(`btn-info`)) {
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad++
+        carrito[e.target.dataset.id] = {...producto}
+        pintarCarrito()
+    }
+//para disminuir
+    if(e.target.classList.contains(`btn-danger`)) {
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad--
+        if (producto.cantidad === 0) {
+            delete carrito[e.target.dataset.id]
+        }
+        pintarCarrito()
+    }
+
+    e.stopPropagation()
 }

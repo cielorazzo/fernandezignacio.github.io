@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 850,
+      "id": 13,
+      "title": "Papas 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/0/600"
+    },
+    {
+      "precio": 320,
+      "id": 14,
+      "title": "Chizitos 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/10/600"
+    },
+    {
+      "precio": 465,
+      "id": 15,
+      "title": "Palitos Salados 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/20/600"
+    },
+    {
+      "precio": 465,
+      "id": 16,
+      "title": "Mani Sab 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/30/600"
+    },
+    {
+      "precio": 380,
+      "id": 17,
+      "title": "Mani Salado 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/40/600"
+    },
+    {
+      "precio": 790,
+      "id": 18,
+      "title": "Conitos 3D 1kg",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    }
+  ]
