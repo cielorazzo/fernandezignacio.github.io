@@ -457,33 +457,6 @@
   @media (max-width: 605px) {
     .inicioMayorista .headerInicio .buscadorInicio input {
       display: none; } }
-  .inicioMayorista .headerInicio .carritoLoginInicio {
-    grid-area: carritoLoginInicio; }
-    .inicioMayorista .headerInicio .carritoLoginInicio ul {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      padding-top: 28px; }
-      .inicioMayorista .headerInicio .carritoLoginInicio ul li {
-        padding: 5px;
-        text-decoration: none;
-        list-style: none; }
-    .inicioMayorista .headerInicio .carritoLoginInicio .bars #icon-menu {
-      display: none; }
-    @media (max-width: 930px) {
-      .inicioMayorista .headerInicio .carritoLoginInicio .bars #icon-menu {
-        display: block;
-        cursor: pointer;
-        font-size: 24px; } }
-    .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio {
-      padding-right: 20px; }
-      .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio img {
-        width: 20px; }
-    .inicioMayorista .headerInicio .carritoLoginInicio .loginInicio img {
-      width: 20px; }
-  @media (max-width: 930px) {
-    .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio, .inicioMayorista .headerInicio .carritoLoginInicio .loginInicio {
-      display: none; } }
   .inicioMayorista .headerInicio .navbarInicio {
     grid-area: navbarInicio; }
     .inicioMayorista .headerInicio .navbarInicio ul {
@@ -783,7 +756,7 @@
         display: none; } }
   .gridcontainerSalados .sidebarSalados {
     grid-area: sidebarSalados;
-    background-color: white;
+    background-color: rgba(149, 173, 222, 0.724);
     height: auto;
     padding: 30px; }
   .gridcontainerSalados .mainSalados {
@@ -793,44 +766,6 @@
     background-position: center;
     background-attachment: fixed;
     grid-area: mainSalados; }
-    .gridcontainerSalados .mainSalados .containerCardsSalados {
-      width: 100%;
-      display: flex;
-      overflow: hidden;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center; }
-      .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados {
-        cursor: pointer;
-        margin: 10px 5px;
-        border: 2px solid lightgrey;
-        border-radius: 10px;
-        background-color: rgba(237, 237, 237, 0.938); }
-        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados {
-          display: block;
-          justify-content: space-between; }
-          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados img {
-            border-radius: 10px;
-            width: 204px; }
-        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados h2 {
-          color: rgba(106, 106, 106, 0.719);
-          font-weight: 800;
-          font-size: 15px;
-          font-family: "Poppins", sans-serif;
-          padding: 10px; }
-        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados p {
-          padding: 1px;
-          color: rgba(106, 106, 106, 0.719);
-          font-weight: 200;
-          font-size: 15px;
-          font-family: "Poppins", sans-serif; }
-        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .footerCardSalados h3 {
-          margin-top: 10px;
-          font-size: 40px;
-          font-weight: 200;
-          text-align: center;
-          color: #153758;
-          letter-spacing: 0.5px; }
   .gridcontainerSalados .footerIndex {
     grid-area: footerIndex;
     background-color: rgba(152, 173, 185, 0.655); }
@@ -924,7 +859,7 @@
               padding: 10px; }
     .gridcontainerSalados .sidebarSalados {
       grid-area: sidebarSalados;
-      background-color: rgba(237, 237, 237, 0.938);
+      background-color: rgba(149, 173, 222, 0.724);
       height: auto;
       padding: 30px;
       width: 100%;
@@ -934,8 +869,8 @@
       justify-content: center;
       text-align: center; }
       .gridcontainerSalados .sidebarSalados img {
-        width: 50px;
-        margin-top: -25px;
+        width: 40px;
+        margin-top: -43px;
         margin-left: 30px; }
     .gridcontainerSalados .mainSalados {
       background-image: url(../img/fondoPantalla.jpg);
@@ -944,42 +879,22 @@
       background-position: center;
       background-attachment: fixed;
       grid-area: mainSalados; }
-      .gridcontainerSalados .mainSalados .containerCardsSalados {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center; }
-        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados {
-          cursor: pointer;
-          margin: 10px 5px;
-          border: 2px solid lightgrey;
-          border-radius: 10px;
-          background-color: rgba(237, 237, 237, 0.938); }
-          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados {
-            display: block;
-            justify-content: space-between; }
-            .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados img {
-              border-radius: 10px;
-              width: 204px; }
-          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados h2 {
-            color: rgba(106, 106, 106, 0.719);
-            font-weight: 800;
-            font-size: 15px;
-            font-family: "Poppins", sans-serif;
-            padding: 10px; }
-          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados p {
-            padding: 1px;
-            color: rgba(106, 106, 106, 0.719);
-            font-weight: 200;
-            font-size: 15px;
-            font-family: "Poppins", sans-serif; }
-          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .footerCardSalados h3 {
-            color: rgba(106, 106, 106, 0.719);
-            font-weight: 200;
-            font-size: 15px;
-            font-family: "Poppins", sans-serif; }
     .gridcontainerSalados .footerIndex {
       grid-area: footerIndex;
       background-color: rgba(152, 173, 185, 0.655); } }
+
+.inicioMayorista {
+  background-image: url(../img/fondoPantalla.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto; }
+  .inicioMayorista .mainInicioCarrito {
+    background-color: #81a0ce;
+    padding: 0;
+    margin-top: 8%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; }

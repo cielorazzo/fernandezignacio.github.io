@@ -588,51 +588,8 @@
                 }
             }
         }
-        .carritoLoginInicio{
-            grid-area: carritoLoginInicio;
-            ul{
-                display: flex;
-                position: relative;
-                justify-content: center;
-                padding-top: 28px;
-                li{
-                    padding: 5px;
-                    text-decoration: none;
-                    list-style: none;
-                }
-            }
-            .bars{
-                #icon-menu{
-                    display: none;
-                }
-                @media (max-width:930px){
-                    #icon-menu{
-                        display: block;
-                        cursor: pointer;
-                        font-size: 24px;
-                    }
-                }
-                
-            }
-            .carritoInicio{
-                padding-right: 20px;
-                img{
-                    width: 20px;
-                }
-            }
-            .loginInicio{
-                img{
-                    width: 20px;
-                }
-            }
-        }
-        @media (max-width:930px){
-            .carritoLoginInicio{
-                .carritoInicio, .loginInicio{
-                    display: none;
-                }
-            }
-        }
+        
+
         .navbarInicio{
             grid-area: navbarInicio;
             ul{
@@ -1035,7 +992,7 @@
     }
     .sidebarSalados{
         grid-area: sidebarSalados;
-        background-color: white;
+        background-color: rgba(149, 173, 222, 0.724);
         height: auto;
         padding: 30px;
 
@@ -1046,55 +1003,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        grid-area: mainSalados;;
-        .containerCardsSalados{
-            width: 100%;
-            display: flex;
-            overflow: hidden;
-            flex-wrap:wrap;
-            justify-content: center;
-            text-align: center;
-            .cardSalados{
-                cursor: pointer;
-                margin: 10px 5px;
-                border: 2px solid lightgrey;
-                border-radius: 10px;
-                background-color: rgba(237, 237, 237, 0.938);
-                .coverCardSalados{
-                    display: block;
-                    justify-content: space-between;
-                    img{
-                        border-radius: 10px;
-                        width:204px;
-                    }
-                }
-                h2{
-                    color: rgba(106, 106, 106, 0.719);
-                    font-weight: 800;
-                    font-size: 15px;
-                    font-family: $font-family;
-                    padding: 10px;
-                }
-                p{
-                    padding: 1px;
-                    color: rgba(106, 106, 106, 0.719);
-                    font-weight: 200;
-                    font-size: 15px;
-                    font-family: $font-family;
-                }
-                .footerCardSalados{
-                    h3{
-                        margin-top: 10px;
-                        font-size: 40px;
-                        font-weight: 200;
-                        text-align: center;
-                        color: #153758;
-                        letter-spacing: 0.5px;
-                    }
-                }
-            }
-        }
-
+        grid-area: mainSalados;
     }
     .footerIndex{
         grid-area: footerIndex;
@@ -1219,7 +1128,7 @@
         }
         .sidebarSalados{
             grid-area: sidebarSalados;
-            background-color: rgba(237, 237, 237, 0.938);
+            background-color: rgba(149, 173, 222, 0.724);
             height: auto;
             padding: 30px;
             width: 100%;
@@ -1229,8 +1138,8 @@
             justify-content: center;
             text-align: center;
             img{
-                width: 50px;
-                margin-top: -25px;
+                width: 40px;
+                margin-top: -43px;
                 margin-left: 30px;
             }
     
@@ -1241,57 +1150,30 @@
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
-            grid-area: mainSalados;;
-            .containerCardsSalados{
-                width: 100%;
-                display: flex;
-                overflow: hidden;
-                flex-wrap:wrap;
-                justify-content: center;
-                text-align: center;
-                .cardSalados{
-                    cursor: pointer;
-                    margin: 10px 5px;
-                    border: 2px solid lightgrey;
-                    border-radius: 10px;
-                    background-color: rgba(237, 237, 237, 0.938);
-                    .coverCardSalados{
-                        display: block;
-                        justify-content: space-between;
-                        img{
-                            border-radius: 10px;
-                            width:204px;
-                        }
-                    }
-                    h2{
-                        color: rgba(106, 106, 106, 0.719);
-                        font-weight: 800;
-                        font-size: 15px;
-                        font-family: $font-family;
-                        padding: 10px;
-                    }
-                    p{
-                        padding: 1px;
-                        color: rgba(106, 106, 106, 0.719);
-                        font-weight: 200;
-                        font-size: 15px;
-                        font-family: $font-family;
-                    }
-                    .footerCardSalados{
-                        h3{
-                            color: rgba(106, 106, 106, 0.719);
-                            font-weight: 200;
-                            font-size: 15px;
-                            font-family: $font-family;
-                        }
-                    }
-                }
-            }
-    
+            grid-area: mainSalados;
         }
         .footerIndex{
             grid-area: footerIndex;
             background-color: $color-footer;
         }
+    }
+}
+
+//boton Carrito
+.inicioMayorista{
+    background-image: url(../img/fondoPantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    .mainInicioCarrito{
+        background-color: rgb(129, 160, 206);
+        padding: 0;
+        margin-top: 8%;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
     }
 }
